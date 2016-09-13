@@ -31,7 +31,7 @@ RUN wget http://blazing-public-downloads.s3-website-us-west-2.amazonaws.com/inst
 
 RUN chmod +x blazingdb_installer.sh
 RUN ./blazingdb_installer.sh
-RUN /opt/blazing/Simplicity 8890 /opt/blazing/disk1/blazing/blazing.conf
+CMD /opt/blazing/Simplicity 8890 /opt/blazing/disk1/blazing/blazing.conf
 
 
 # CMD ["/run_jupyter.sh"]
