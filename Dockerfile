@@ -14,7 +14,7 @@ RUN echo "deb mirror://mirrors.ubuntu.com/mirrors.txt trusty main restricted uni
 RUN  echo 'Acquire::http { Proxy "http://192.168.150.50:3142"; };' >> /etc/apt/apt.conf.d/01proxy
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-	build-essential \
+	wget \
 	&& rm -rf /var/lib/apt/lists/*
 
 
